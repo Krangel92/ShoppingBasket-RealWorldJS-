@@ -4,12 +4,12 @@ class ShoppingBasket {
 	}
 
 	addItem(candy) {
-		this.basket.push(candy);
+		this.basket.push(candy.price);
 	}
 
 	getTotalPrice() {
 		let total = 0;
-		for (i = 0; i < this.basket.length; i++) {
+		for (let i = 0; i < this.basket.length; i++) {
 			total += this.basket[i];
 		}
 		return total;
