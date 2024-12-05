@@ -12,3 +12,5 @@ class Candy {
 		return this.price;
 	}
 }
+
+module.exports = Candy;
