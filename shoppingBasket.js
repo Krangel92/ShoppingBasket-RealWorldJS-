@@ -4,13 +4,13 @@ class ShoppingBasket {
 	}
 
 	addItem(candy) {
-		this.basket.push(candy.price);
+		this.basket.push(candy);
 	}
 
 	getTotalPrice() {
 		let total = 0;
 		for (let i = 0; i < this.basket.length; i++) {
-			total += this.basket[i];
+			total += this.basket[i].getPrice();
 		}
 		return total;
 	}
