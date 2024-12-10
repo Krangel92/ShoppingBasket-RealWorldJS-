@@ -1,4 +1,5 @@
-//
+// Exercise (instructions):
+// write tests for the Candy class using a JS object as a "double" or mock.
 
 const Candy = require("./candy.js");
 // mocking a candy instance of the Candy class:
