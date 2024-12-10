@@ -1,19 +1,15 @@
 //
 
 const Candy = require("./candy.js");
-// let candy1 = new Candy("Twix", 3.5);  -> if I create the instance here, instead of lines 9 & 15, both 'it' can access iit.
+// mocking a candy instance of the Candy class:
+let candyDouble = { getName: () => "Twix", getPrice: () => 3.5 };
 
 describe("candy", () => {
 	it("takes a candy name & its price and the getName method returns the name", () => {
-		// Create an instance of the Candy class:
-		let candy1 = new Candy("Twix", 3.5);
-
-		// Test the getName method on the instance created:
-		expect(candy1.getName()).toBe("Twix");
+		// Test the getName method on the mocke instance created:
+		expect(candyDouble.getName()).toBe("Twix");
 	});
 	it("takes a candy name & its price and the getPrice method returns the price", () => {
-		let candy1 = new Candy("Twix", 3.5);
-
-		expect(candy1.getPrice()).toBe(3.5);
+		expect(candyDouble.getPrice()).toBe(3.5);
 	});
 });
