@@ -4,7 +4,7 @@
 const ShoppingBasket = require("./shoppingBasket.js");
 
 describe("shoppingBasket", () => {
-	it("adds the candy price to the initially empty basket", () => {
+	it("adds the candy to the initially empty basket", () => {
 		// Create a fake candy object:
 		let fakeCandy = { getName: () => "Twix", getPrice: () => 3.5 };
 
